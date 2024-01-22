@@ -7,12 +7,36 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/03a9dec68e.js" crossorigin="anonymous"></script>
     <style>
+      :root {
+        --dark: #131318;
+        --dark2: #424247;
+        --dark3: rgba(19, 19, 24, 0.6);
+        --primary: #ff4240;
+      }
       body {
         font-family: 'Manrope', sans-serif;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <nav class="max-w-[1170px] mx-auto flex justify-between items-center py-12">
+      <p class="text-[--dark] text-3xl font-extrabold">Hockey<span class="text-[--primary]">'</span>s</p>
+      <ul class="capitalize flex gap-11 items-center text-[--dark2]">
+        <li><a href="#" class="hover:text-[--primary] transition-all font-bold text-[--primary]">home</a></li>
+        <li><a href="#" class="hover:text-[--primary] transition-all">About</a></li>
+        <li><a href="#" class="hover:text-[--primary] transition-all">Pages</a></li>
+        <li><a href="#" class="hover:text-[--primary] transition-all">Blog</a></li>
+        <li><a href="#" class="hover:text-[--primary] transition-all">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <a href="#" class="text-[--dark2] text-2xl"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="capitalize font-bold text-sm text-white py-4 px-6 rounded-lg bg-[--primary]">get ticket</a>
+      </div>
+    </nav>
+  </body>
 </html>

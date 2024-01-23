@@ -19,6 +19,7 @@
         --dark: #131318;
         --dark2: #424247;
         --dark3: rgba(19, 19, 24, 0.6);
+        --white2: rgba(255, 255, 255, 0.6);
         --primary: #ff4240;
       }
       body {
@@ -27,7 +28,8 @@
     </style>
   </head>
   <body>
-    <nav class="max-w-[1170px] mx-auto flex justify-between items-center md:py-12 py-6">
+    <!-- Navbar Starts Here -->
+    <nav class="max-w-[1170px] mx-auto flex justify-between items-center md:py-12 py-6 px-5">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -45,6 +47,25 @@
               <li><a href="#" class="hover:text-[--primary] transition-all">Pages</a></li>
               <li><a href="#" class="hover:text-[--primary] transition-all">Blog</a></li>
               <li><a href="#" class="hover:text-[--primary] transition-all">Contact</a></li>
+              <!-- Theme Button -->
+              <label class="swap swap-rotate">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" class="theme-controller" value="light" />
+
+                <!-- sun icon -->
+                <svg class="swap-on fill-current w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+                  />
+                </svg>
+
+                <!-- moon icon -->
+                <svg class="swap-off fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+                  />
+                </svg>
+              </label>
             </ul>
           </div>
           <a class="btn btn-ghost text-[--dark] lg:text-3xl text-[24px] font-extrabold">Hockey<span class="text-[--primary]">'</span>s</a>
@@ -63,18 +84,195 @@
           <a href="#" class="capitalize font-bold text-sm text-white md:py-4 py-2 px-4 md:px-6 rounded-lg bg-[--primary]">get ticket</a>
         </div>
       </div>
-      <!-- <p class="text-[--dark] text-3xl font-extrabold">Hockey<span class="text-[--primary]">'</span>s</p>
-      <ul class="capitalize flex gap-11 items-center text-[--dark2]">
-        <li><a href="#" class="hover:text-[--primary] transition-all font-bold text-[--primary]">home</a></li>
-        <li><a href="#" class="hover:text-[--primary] transition-all">About</a></li>
-        <li><a href="#" class="hover:text-[--primary] transition-all">Pages</a></li>
-        <li><a href="#" class="hover:text-[--primary] transition-all">Blog</a></li>
-        <li><a href="#" class="hover:text-[--primary] transition-all">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-6">
-        <a href="#" class="text-[--dark2] text-2xl"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#" class="capitalize font-bold text-sm text-white py-4 px-6 rounded-lg bg-[--primary]">get ticket</a>
-      </div> -->
     </nav>
+    <!-- Navbar End Here -->
+    <!-- Header Start Here -->
+    <header class="max-w-[1170px] mx-auto px-5">
+      <div class="slider_box rounded-xl min-h-80">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex gap-3 transform left-1/2 sm:left-8 lg:right-5 sm:bottom-8 bottom-5 -translate-x-1/2 sm:-translate-x-0"
+            >
+              <a href="#slide4" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❮</a
+              >
+              <a href="#slide2" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❯</a
+              >
+            </div>
+            <div class="rounded-2xl bg-[--dark] p-8 absolute right-8 bottom-8 max-w-[500px] hidden md:block">
+              <h3 class="text-[24px] font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
+              <p class="font-medium text-[--white2]">
+                Embark on a journey to discover the remarkable stories of unsung heroes across diverse fields.
+              </p>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex gap-3 transform left-1/2 sm:left-8 lg:right-5 sm:bottom-8 bottom-5 -translate-x-1/2 sm:-translate-x-0"
+            >
+              <a href="#slide1" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❮</a
+              >
+              <a href="#slide3" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❯</a
+              >
+            </div>
+            <div class="rounded-2xl bg-[--dark] p-8 absolute right-8 bottom-8 max-w-[500px] hidden md:block">
+              <h3 class="text-[24px] font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
+              <p class="font-medium text-[--white2]">
+                Embark on a journey to discover the remarkable stories of unsung heroes across diverse fields.
+              </p>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex gap-3 transform left-1/2 sm:left-8 lg:right-5 sm:bottom-8 bottom-5 -translate-x-1/2 sm:-translate-x-0"
+            >
+              <a href="#slide2" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❮</a
+              >
+              <a href="#slide4" class="btn sm:text-xl btn-sm sm:btn-md btn-circle bg-[--dark] text-white hover:text-[--dark] border-none"
+                >❯</a
+              >
+            </div>
+            <div class="rounded-2xl bg-[--dark] p-8 absolute right-8 bottom-8 max-w-[500px] hidden md:block">
+              <h3 class="text-[24px] font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
+              <p class="font-medium text-[--white2]">
+                Embark on a journey to discover the remarkable stories of unsung heroes across diverse fields.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl bg-[--dark] p-5 md:hidden mt-4 text-center">
+          <h3 class="text-[18px] font-extrabold mb-4 text-white">Meet all the heroes from the field</h3>
+          <p class="text-[14px] font-medium text-[--white2]">
+            Embark on a journey to discover the remarkable stories of unsung heroes across diverse fields.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Header End Here-->
+    <!-- Progress Section Start Here -->
+    <main class="max-w-[1170px] mx-auto px-5">
+      <section class="sm:mt-24 mt-10">
+        <!-- Section Title -->
+        <div class="border-y-[1px] border-dashed">
+          <div class="section_title_box text-center max-w-[610px] mx-auto sm:py-8 py-6">
+            <h3 class="font-extrabold text-[--dark] sm:text-3xl text-[22px] sm:mb-6 mb-4">Professional Hockeys Club</h3>
+            <p class="text-[--dark3] font-medium text-[14px] sm:text-[16px]">
+              Welcome to the heart and soul of the ice – our Professional Hockey Club. As a powerhouse in the world of hockey .
+            </p>
+          </div>
+        </div>
+        <!-- Progress bar -->
+        <div class="sm:mt-12 mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="radial-progress text-[--primary] font-extrabold text-[28px]"
+              style="--value: 87; --size: 7rem; --thickness: 10px"
+              role="progressbar"
+            >
+              87%
+            </div>
+            <h3 class="text-[20px] font-semibold text-[--dark] mt-6 mb-4">Prayer Facility</h3>
+            <p class="text-[--dark3]">Welcome to our state-of-the-art player facility.guiding force behind our team</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#49D293] font-extrabold text-[28px]"
+              style="--value: 95; --size: 7rem; --thickness: 10px"
+              role="progressbar"
+            >
+              95%
+            </div>
+            <h3 class="text-[20px] font-semibold text-[--dark] mt-6 mb-4">Experienced Coach</h3>
+            <p class="text-[--dark3]">Meet our seasoned and accomplished coach, a guiding force behind our team's</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#FFB546] font-extrabold text-[28px]"
+              style="--value: 90; --size: 7rem; --thickness: 10px"
+              role="progressbar"
+            >
+              90%
+            </div>
+            <h3 class="text-[20px] font-semibold text-[--dark] mt-6 mb-4">Senior Player</h3>
+            <p class="text-[--dark3]">Introducing our esteemed senior player, a seasoned veteran whose skill, dedication</p>
+          </div>
+          <div class="text-center">
+            <div
+              class="radial-progress text-[#4C8DF1] font-extrabold text-[28px]"
+              style="--value: 80; --size: 7rem; --thickness: 10px"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h3 class="text-[20px] font-semibold text-[--dark] mt-6 mb-4">Training Ground</h3>
+            <p class="text-[--dark3]">Step onto the hallowed grounds where champions are forged – our cutting-edge training facility.</p>
+          </div>
+        </div>
+      </section>
+      <section class="sm:mt-24 mt-10">
+        <!-- Section Title -->
+        <div class="border-y-[1px] border-dashed">
+          <div class="section_title_box text-center max-w-[610px] mx-auto sm:py-8 py-6">
+            <h3 class="font-extrabold text-[--dark] sm:text-3xl text-[22px] sm:mb-6 mb-4">Program Sections</h3>
+            <p class="text-[--dark3] font-medium text-[14px] sm:text-[16px]">
+              "Explore our diverse array of program sections, each crafted to cater to specific needs and interests.
+            </p>
+          </div>
+        </div>
+        <!-- Section title end here -->
+        <div class="grid sm:grid-cols-2 grid-cols-1 gap-6 sm:mt-12 mt-6">
+          <div class="">
+            <div class="bg-[url(images/2.png)] bg-no-repeat bg-cover sm:pt-[90px] sm:px-10 sm:pb-10 p-6 rounded-2xl">
+              <h3 class="text-xl text-white font-extrabold sm::mb-4 mb-3">Junior Program</h3>
+              <p class="mb-6 font-medium text-white">
+                Welcome to our dynamic Junior Program, where young talents embark on a transformative journey of skill development and
+                personal growth.
+              </p>
+              <a
+                href="#"
+                class="capitalize font-bold sm:text-[20px] text-[17px] text-white sm:py-[10px] sm:px-[22px] py-2 px-[17px] rounded-lg bg-[--primary]"
+                >Register Now!</a
+              >
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[url(images/3.png)] bg-no-repeat bg-cover sm:pt-[90px] sm:px-10 sm:pb-10 p-6 rounded-2xl">
+              <h3 class="text-xl text-white font-extrabold sm::mb-4 mb-3">Teenager Program</h3>
+              <p class="mb-6 font-medium text-white">
+                Discover the exciting Teenager Program, a platform designed to empower and inspire the next generation of leaders nd
+                personal growth.
+              </p>
+              <a
+                href="#"
+                class="capitalize font-bold sm:text-[20px] text-[17px] text-white sm:py-[10px] sm:px-[22px] py-2 px-[17px] rounded-lg bg-[--primary]"
+                >Register Now!</a
+              >
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <div class="bg-[url(images/4.png)] bg-no-repeat bg-cover sm:pt-[90px] sm:px-10 sm:pb-10 p-6 rounded-2xl">
+              <h3 class="text-xl text-white font-extrabold sm::mb-4 mb-3">Professional Program</h3>
+              <p class="mb-6 font-medium text-white max-w-[520px]">
+                Discover the exciting Teenager Program, a platform designed to empower and inspire the next generation of leaders nd
+                personal growth.
+              </p>
+              <a
+                href="#"
+                class="capitalize font-bold sm:text-[20px] text-[17px] text-white sm:py-[10px] sm:px-[22px] py-2 px-[17px] rounded-lg bg-[--primary]"
+                >Register Now!</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
